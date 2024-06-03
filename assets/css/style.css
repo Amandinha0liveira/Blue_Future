@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Poiret+One&display=swap');
+
+*{
+    list-style: none;
+}
+
+/*corpo*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow-y: hidden;
+}
+
+:root {
+    --color-destak: #2F6AA5;
+    --color-black: #1B1B1B;
+    --color-white: #ECECEC;
+    --font-title: "Nanum Myeongjo",sans-serif;
+    --font-media:"Poiret One",sans-serif;
+    --font-body: "Nixie One", sans-serif;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1{
+    background-color: #003366;
+    padding: 1rem;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    font-family:"Nanum Myeongjo",sans-serif;
+    color: #ECECEC;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: left;
+    line-height: 2;
+    z-index: 1;
+    margin:0;
+}
+
+h2{
+    font-family:"Poiret One",sans-serif;
+    color: #e1e1e1;
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+    font-weight: bold; 
+   
+}
+#subtitulo {
+    line-height:2
+}
+
+body{
+    background-color: white;
+    text-align: center;
+    font-family: "Nixie One", sans-serif;
+    }
+
+
+/*cards*/    
+#secao-abas{
+    /* background-color:rgb(207, 235, 243); */
+    height: 100vh;
+}
+    
+#secao-abas ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0; /* Removendo o preenchimento padrão das listas */
+}
+
+.card {
+    max-width: 300px;
+    width: 100%; /* Garante que os cards ocupem todo o espaço disponível na linha */
+    height: 300px;
+    margin: 80px; /* Espaçamento entre os cards */
+    cursor: pointer;
+    position: relative;
+}
+
+.image-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image-wrapper img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.card-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity .8s, top .5s;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #0c1c77;
+    font-family: "Poiret One", sans-serif;
+    font-size: 32px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.card:hover .card-text {
+    opacity: 1;
+    top: 50%;
+}
+
+.card:hover .image-wrapper {
+    opacity: .3;
+}
+
+
+/*menu superior*/
+.top-bar .logo {
+    color: #003366;
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.top-bar nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top-bar nav ul li {
+    margin: 0 15px;
+}
+
+.top-bar nav ul li a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: larger;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.top-bar .logo:hover,
+.top-bar nav ul li a:hover {
+    color: #4371f0;
+}
+
