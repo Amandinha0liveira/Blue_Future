@@ -12,6 +12,12 @@ document.addEventListener('DOMContentLoaded', function () {
         const descricaoViagem = document.getElementById('descricao-viagem').value;
         const quantidadeLixo = document.getElementById('quantidade-lixo').value;
 
+        // Verificar se algum campo está vazio
+        if (nomeViagem.trim() === '' || dataViagem.trim() === '' || oceanTarget.trim() === '' || descricaoViagem.trim() === '' || quantidadeLixo.trim() === '') {
+            alert('Por favor, preencha todos os campos antes de enviar o formulário!');
+            return; // Impede o envio do formulário se houver campos em branco
+        }
+
         // verificando se tem dados antes
         let viagensSalvas = JSON.parse(localStorage.getItem('viagens')) || [];
 
