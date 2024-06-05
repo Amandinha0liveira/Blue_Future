@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Poiret+One&display=swap');
+
+/*corpo*/
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    /* overflow-y: hidden;  */
+    background-color: white;
+    text-align: center;
+    font-family: "Nixie One", sans-serif;
+}
+
+
+h1{
+    background-color: rgba(0, 51, 102, 0.534);
+    padding: 1rem;
+    top: 0;
+    /* display: flex; usado para deixar no canto */
+    justify-content: space-between;
+    font-family:"Nanum Myeongjo",sans-serif;
+    color: #ECECEC;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 2;
+    z-index: 1;
+    margin:0;
+}
+
+h2{
+    font-family:"Poiret One",sans-serif;
+    color: #e1e1e1;
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+    font-weight: bold; 
+   
+}
+
+h3{
+    font-family:"Poiret One",sans-serif;
+    color: rgb(6, 19, 77);
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    font-weight: bold; 
+   
+}
+
+#subtitulo {
+    line-height:2
+}
+
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header {
+    background-color: rgba(39, 101, 126, 0.575);
+    padding: 20px;
+    text-align: center;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*formulario*/
+section {
+    background-color: rgba(39, 101, 126, 0.575);
+    padding: 20px;
+    margin-bottom: 20px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+/*botoes*/
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+
+.meu-botao-menu {
+  background-color: #245789;
+  color: #040404;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.meu-botao-consulta {
+  background-color: #6e8fc1;
+  color: #040404;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.botoes-menu {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 1000; /* Garante que os botões fiquem acima de outros elementos */
+}
+
+.meu-botao-consulta {
+  background-color: #245789;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+
+.meu-botao-consulta:hover {
+  background-color: #2e6ebc;
+}
+
+/*formularios novamente*/
+#formulario {
+    margin: 0 auto; /* Centraliza horizontalmente */
+    max-width: 600px; /* Define largura máxima */
+  }
+  
+  /* Estilo para ajustar a largura dos formulários clonados */
+  #formulario form {
+    width: 100%; /* Você pode ajustar a largura conforme necessário */
+    margin-bottom: 100px; /* Espaçamento entre os formulários clonados */
+  }
+  
+  #formulario button {
+    display: inline-block;
+    vertical-align: middle; /* Alinha os botões verticalmente */
+    margin-right: 20px; /* Espaçamento entre os botões */
+  }
+  .form-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .form-container div {
+    flex: 1 0 50%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .perguntas, .respostas {
+    flex: 1 0 50%;
+    margin: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .perguntas div, .respostas div {
+    margin-bottom: 10px; /* Espaçamento entre perguntas e respostas */
+  }
+  
+  .container-perguntas-respostas {
+    display: flex; /* Ativa o Flexbox */
+    flex-direction: row; /* Alinha os elementos na horizontal */
+    flex-wrap: wrap; /* Permite quebrar em várias linhas se necessário */
+    align-items: center; /* Alinha os elementos verticalmente no centro */
+    margin: 10px; /* Espaçamento em torno do container */
+  }
+  
+  .pergunta, .resposta {
+    flex: 1 0 50%; 
+    margin: 5px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+  }
+  
+  .pergunta label {
+    font-weight: bold; 
+    margin-bottom: 5px; 
+  }
+
+  /*tabelas*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #fafafa;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #a8c6e4; 
+}
+
+tbody tr:nth-child(even) {
+  background-color: #91b7dc; /
+}
+
+/*deletar imagem*/
+.excluir-img {
+  width: 20px; 
+  height: auto; 
+  cursor: pointer; 
+}
+
+
+/*pesquisa*/
+.search-input {
+  width: 500px; 
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/*imagem lupa-pesquisa*/
+.search-icon {
+  width: 50px; 
+  height: 50px; 
+  cursor: pointer;
+  vertical-align: middle; 
+
+}

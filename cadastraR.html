@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Viagens - Limpeza dos Oceanos</title>
+    <link rel="stylesheet" href="./assets/css/cadastrar.css">
+    <style>
+        .form-container {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .form-item {
+          flex: 1 0 50%;
+        }
+    </style>
+</head>
+
+<div class="video-background">
+    <video autoplay muted loop>
+        <source src="./assets/imagens_gifs/Untitled video - Made with Clipchamp (2).mp4" type="video/mp4">
+    </video>
+</div>
+
+<body>
+    <header>
+        <h1>Cadastro de Viagens - BlueBoat</h1>
+    </header>
+
+    <main>
+        <div id="formulario">
+            <section id="cadastro">
+                <form id="form-cadastro"> 
+                    <h3>
+                        <div class="form-container">
+                            <div class="perguntas">
+                                <div>
+                                <label for="nome-viagem">Nome da Viagem:
+                                    <input type="text" id="nome-viagem"required>
+                                </label>
+                            
+
+                            <label for="data-viagem">Data da Viagem:
+                                <input type="date" id="data-viagem"required>
+                            </label>
+
+                            <label for="local-viagem">Local da Viagem:
+                                <select id="ocean-target"name="ocean-target" required>
+                                    <option value="" disabled selected>Escolha uma opção</option>
+                                    <option value="Antártico">Costas próximas (50km)</option>
+                                    <option value="Antártico">Rios</option>
+                                    <option value="Antártico">Lagos</option>
+                                    <option value="Antártico">Antártico</option>
+                                    <option value="Ártico">Ártico</option>
+                                    <option value="Atlântico Norte">Atlântico Norte</option>
+                                    <option value="Atlântico Sul">Atlântico Sul</option>
+                                    <option value="Índico">Índico</option>
+                                    <option value="Pacífico Norte">Pacífico Norte</option>
+                                    <option value="Pacífico Sul">Pacífico Sul</option>
+                                </select>
+                            </label>
+                        </div>
+
+                            <label for="descricao-viagem">Descrição da Viagem:
+                                <input type="text" id="descricao-viagem"required>
+                            </label>
+                        
+                            <label for="quantidade-lixo">Media da Quantidade de Lixo Esperado a ser coletado (kg) :
+                                <input type="number" id="quantidade-lixo" required>
+                            </label>
+                    </h3>
+
+                    <div class="button-grid">
+                        <button type="submit" id="botao-cadastro">Cadastrar Viagem</button>
+                    </div>
+
+                </form>
+                
+
+            </section>
+        </div>            
+
+        <div>
+            <a class="nes-btn is-primary meu-botao-menu" href="./index.html">Voltar ao menu</a>
+            <a class="nes-btn is-primary meu-botao-menu" href="./consulta.html">Consulta</a>
+        </div>
+
+        </div>
+    </main>
+        
+    <script src="./assets/js/cadastrar_formulario.js" defer></script>
+
+</body>
+</html>
+<!-- GABI MEXENDO NO FORMS -->

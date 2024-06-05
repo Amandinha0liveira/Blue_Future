@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
     list-style: none;
@@ -10,6 +11,7 @@ body {
     padding: 0;
     font-family: sans-serif;
     overflow-y: hidden;
+    font-family: "Nixie One", sans-serif;
 }
 
 :root {
@@ -62,6 +64,27 @@ h2{
     font-weight: bold; 
    
 }
+
+h3{
+    font-family: "Raleway", sans-serif;
+    color: rgb(6, 19, 77);
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    font-weight: bold; 
+   
+}
+
+h4{
+    font-family: "Raleway", sans-serif;
+    color: rgb(6, 19, 77);
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    font-weight: bold; 
+   
+}
+
 #subtitulo {
     line-height:2
 }
@@ -169,4 +192,3 @@ body{
 .top-bar nav ul li a:hover {
     color: #4371f0;
 }
-

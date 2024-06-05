@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Viagens - Limpeza dos Oceanos</title>
+    <link rel="stylesheet" href="./assets/css/cadastrar.css">
+    <script src="./assets/js/consulta_ver.js" defer></script>
+    <script src="./assets/js/filtro.js"></script>
+</head>
+
+<div class="video-background">
+    <video autoplay muted loop>
+        <source src="./assets/imagens_gifs/Untitled video - Made with Clipchamp (2).mp4" type="video/mp4">
+    </video>
+</div>
+
+
+<section id="consulta">
+    <h2>Consulta de Viagens</h2>
+
+    <div class="botoes-menu">
+        <a class="nes-btn is-primary meu-botao-consulta" href="./index.html">Voltar ao menu</a>
+        <a class="nes-btn is-primary meu-botao-consulta" href="./cadastraR.html">Cadastrar</a>
+    </div>
+
+    <div class="filter-bar">
+        <p><b>Pesquise por: nome, data ou localidade</b></p>
+        <img src="https://prints.ultracoloringpages.com/71d8f989d2852ff839b66419ca16e27c.png" alt="Ícone de Pesquisa" class="search-icon">
+        <input type="text" id="filterInput" placeholder="Pesquisar... (nome, data ou local)">
+    </div>
+
+    <table id="tabela-consulta">
+        <thead>
+            <tr>
+                <th>Nome da Expedição</th>
+                <th>Data da Viagem</th>
+                <th>Local da Viagem</th>
+                <th>Descrição da Viagem</th>
+                <th>Quantidade de Lixo Coletado (kg)</th>
+                <th>Descarte</th>
+            </tr>
+        </thead>
+        <tbody id="tbody-consulta">
+        </tbody>
+    </table>
+</section>
+
